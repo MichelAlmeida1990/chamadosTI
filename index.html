@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helpdesk de TI</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1 class="cabecalho__titulo">Helpdesk de TI</h1>
+  </header>
+
+  <main class="conteudo-principal">
+    <section class="secao-formulario">
+      <h2 class="secao-formulario__titulo">Abrir Novo Chamado</h2>
+
+      <form id="formularioChamado" class="formulario">
+        <label for="titulo" class="formulario__rotulo">Título</label>
+        <input type="text" id="titulo" class="formulario__entrada" placeholder="Digite o título" required>
+
+        <label for="descricao" class="formulario__rotulo">Descrição</label>
+        <textarea id="descricao" class="formulario__area-texto" placeholder="Digite a descrição" required></textarea>
+
+        <button type="submit" class="formulario__botao">Abrir Chamado</button>
+      </form>
+    </section>
+
+    <section class="secao-lista-chamados">
+      <h2 class="secao-lista-chamados__titulo">Lista de Chamados</h2>
+      <ul id="listaChamados" class="lista-chamados"></ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p class="rodape__texto">© 2024 Helpdesk de TI. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
